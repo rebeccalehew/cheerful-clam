@@ -1,12 +1,12 @@
 USE bookstore_db
 
-INSERT INTO departments (name)
+INSERT INTO department (name)
 VALUES
     ("Customer Service"),
     ("Marketing"),
     ("Warhouse");
 
-INSERT INTO roles (title, salary, department_id)
+INSERT INTO role (title, salary, department_id)
 VALUES
     ("Customer Service Associate", 35000, 1),
     ("Assistant Manager", 45000, 1),
@@ -18,7 +18,7 @@ VALUES
     ("Inverntory Clerk", 20000, 3),
     ("Buyer", 45000, 3);
 
-INSERT INTO employees (first_name, last_name, role_id, manager_id)
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES
     ("Carol", "Danvers", 9, 3),
     ("Scott", "Lang", 1, NULL),
